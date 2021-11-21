@@ -1,13 +1,10 @@
-type estrcuturaDocumento = {
+export type ColeccionReservas = {
 
     day: number,
     month: number,
     year: number,
     seat: number,
+    ocuapdo: false, //Predeterminado a disponible
+    token: string,
 }
 
-type listaDias = {
-    dias: Array<estrcuturaDocumento>;
-}
-
-export { estrcuturaDocumento};
